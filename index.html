@@ -11,11 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="hero-section">
+    <header class="hero-section" id="home">
         <button class="hamburger-button" aria-label="Abrir Menu">
             <span></span>
             <span></span>
@@ -35,19 +36,141 @@
             <h1>Café <span class="highlight-text">Grão Fino</span></h1>
             <p>O ritual do café especial, da nossa fazenda para a sua xícara</p>
             <button class="cta-button">Quero acesso antecipado</button>
-        </div>
-         
+        </div> 
     </header>
 
-    
 
-<script src="js/script.js"></script>
+    </header>
 
-    <footer>
-        <p>&copy; 2025 Café Grão Fino. Todos os direitos reservados.</p>
+    <main>
+        <section class="content-section" id="historia">
+            <div class="content-image-wrapper">
+                <img src="/img/history.png" alt="Cafeteria aconchegante com café especial">
+            </div>
+            <div class="content-text-wrapper">
+                <h2 class="section-title">Nossa História <span class="title-underline"></span></h2>
+                <p>No coração das montanhas de Minas Gerais...</p>
+                <p>Com respeito à terra e às tradições nós aprendemos a ouvir o tempo da colheita, a escolher cada fruto no auge de sua maturação e a transformar os grãos com uma torra lenta, que revela a alma de nosso terroir. Cada lote é uma celebração, um legado de família que se renova a cada safra.
+                O Café Grão Fino é o resultado dessa dedicação. Não é apenas uma bebida, mas um elo entre o nosso trabalho e o seu ritual diário. Convidamos você a fazer uma pausa, a sentir o aroma e a descobrir em cada gole um pouco da nossa história. Uma história que, agora, também é sua.</p>
+            </div>
+        </section>
+
+        <section id="cafes" class="products-section">
+            <div class="container">
+                <h2 class="products-title">Alguns de nossos produtos, os melhores do mercado, feitos para você.</h2>
+                <p class="products-subtitle">Todos são validados e possuem todos os selos, a garantia é 100%.</p>
+                
+                <div class="product-cards-grid">
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="/img/reserva.png" alt="Café Grão Fino Reserva da Mantiqueira">
+                        </div>
+                        <div class="product-info-box">
+                            <h3 class="product-name">Reserva da Mantiqueira</h3>
+                            <p class="product-description">Chocolate, amêndoas, nozes e um toque de laranja.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="/img/amanhecer.png" alt="Café Grão Fino Amanhecer na Fazenda">
+                        </div>
+                        <div class="product-info-box">
+                            <h3 class="product-name">Amanhecer na Fazenda</h3>
+                            <p class="product-description">Caramelo, melaço e uma acidez cítrica suave.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <img src="/img/grãofino.png" alt="Café Grão Fino Grão Rubi">
+                        </div>
+                        <div class="product-info-box">
+                            <h3 class="product-name">Grão Rubi, especial da casa</h3>
+                            <p class="product-description">Frutas vermelhas, flor de jasmim e finalização longa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <section id="clube" class="subscription-section">
+                <div class="container">
+                    <div class="subscription-image-wrapper">
+                        
+
+                    <img src="img/finaly.png" alt="Xícara de café especial com grãos ao redor">
+                    </div>
+                    <div class="subscription-text-wrapper">
+                        <h2 class="section-title">O Clube de Assinatura <span class="title-underline"></span></h2>
+                        <p>Receba em casa, todos os meses, uma seleção exclusiva dos nossos melhores grãos. Ser membro do Clube Grão Fino é ter acesso a lotes especiais, brindes surpresa e a certeza de um café fresco e de qualidade superior sempre à mão.</p>
+                        <ul>
+                            <li>✔ Cafés exclusivos que não vão para a loja</li>
+                            <li>✔ Brindes mensais (xícaras, acessórios e mais)</li>
+                            <li>✔ Frete grátis em todas as entregas do clube</li>
+                            <li>✔ Acesso antecipado a todos os lançamentos</li>
+                        </ul>
+                        <button class="cta-button">Quero acesso antecipado</button>
+                    </div>
+                </div>
+        </section>
+</main>
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-column about">
+                    <h3 class="footer-logo">Café Grão Fino</h3>
+                    <p>Da nossa fazenda no Sul de Minas para a sua xícara. Qualidade, tradição e paixão em cada grão.</p>
+                </div>
+
+                
+                <div class="footer-column links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#historia">Nossa História</a></li>
+                        <li><a href="#cafes">Nossos Cafés</a></li>
+                        <li><a href="#clube">Clube de Assinatura</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="footer-column contact">
+                    <h4>Contato</h4>
+                    <p>Ficou com alguma dúvida ou quer falar conosco?</p>
+                    <a href="mailto:contato@cafegraofino.com.br" class="footer-email">contato@cafegraofino.com.br</a>
+                    <p class="footer-whatsapp">Whatsapp: (35) 99876-5432</p>
+                </div>
+
+                
+                <div class="footer-column newsletter">
+                    <h4>Fique por dentro</h4>
+                    <p>Seja o primeiro a saber do nosso lançamento e receber ofertas exclusivas.</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Seu melhor e-mail">
+                        <button type="submit">→</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Café Grão Fino. Todos os direitos reservados. | Desenvolvido com carinho.</p>
+            </div>
+        </div>
     </footer>
 
+        
+    </main>
 
+
+
+
+<script src="js/script.js"></script>
 
 
 </body>
